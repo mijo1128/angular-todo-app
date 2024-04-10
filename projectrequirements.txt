@@ -1,0 +1,35 @@
+Let's do a simple coding challenge instead of this pair programming.
+The main goal is to develop a simple Typescript Angular app with a Python Flask backend.
+
+*****Start with this tutorial.  When you finish it, you'll have an in-memory simulated data server.
+
+*****Replace this in-memory data server with a REST API implemented using Python Flask. This API can use an in-memory data structure to store the "heroes".
+
+Feel free to change this so that it stores something else other than "heroes".  Maybe you want to make a TODO app or some other list based app.
+
+After you finish this, shoot me a message and we'll set up a meeting so that you walk me through the code.
+
+
+
+*****Stretch goal 1 - store the data in a local database (SQLite)
+
+
+
+*****Stretch goal 2 - Add a notification system so that when something changes, all connected clients will be notified, which in turn should update the page.
+Be sure to continue using the REST API; the websocket should only be used for notifications coming from the server.
+
+
+
+Hints - 
+Use Postman to help you test the REST API so that you don't have to test it using the Angular app.  You can also use Postman to help you test the websocket if you do Stretch Goal 2.
+
+
+
+******Use socket.io websockets for the notifications or NATS.io websockets. The latter will be more difficult to learn but more rewarding. Here's an example, albeit a fairly poor example. 
+Sorry, I couldn't find something better. Feel free to search for yourself.
+
+If you're using WIndows, use WSL2 for development instead of developing directly on your Windows machine.  If you use a Mac, it'd be better to create an Ubuntu Server VM using Oracle Virtual Box (free).
+This isn't required, but it's how we do it at HBS, so although it's a lot to learn, it's well worth the effort.
+You still will use VSCode on your Windows OS (or Mac OS), but you can connect to WSL2.  Here's a decent article about it.
+
+Join the HBS Slack #general channel if you have questions. I can periodically hop onto a quick call and pair with you if you need higher bandwidth. Please don't PM me; keep the questions public.
